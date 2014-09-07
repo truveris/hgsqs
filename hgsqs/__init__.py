@@ -20,7 +20,7 @@ def send(ui, repo, **kwargs):
         ui.warn("warning: hgsqs is enabled but missing aws config\n")
         return 0
 
-    queue_names = [n.strip() for n in queue_names if n.strip()]
+    queue_names = [n.strip() for n in queue_names.split(",") if n.strip()]
 
     if not queue_names:
         ui.warn("warning: hgsqs is enabled but missing queues\n")
