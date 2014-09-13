@@ -8,6 +8,7 @@ message queuing obsession.
 
 ## Requirements
  - Python 2.7+
+ - hgapi
  - boto
 
 ## Installation
@@ -19,7 +20,7 @@ pip install hgsqs
 Put that in the .hg/hgrc of your project:
 ```
 [hooks]
-incoming.hgsqs = python:hgsqs:send
+incoming.hgsqs = hgsqs
 
 [hgsqs]
 aws_access_key_id = FILL-IN
