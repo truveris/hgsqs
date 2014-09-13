@@ -1,5 +1,6 @@
 # Copyright 2014, Truveris Inc.
 
+import os
 from setuptools import setup, find_packages
 
 
